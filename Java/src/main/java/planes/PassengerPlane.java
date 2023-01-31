@@ -1,4 +1,4 @@
-package Planes;
+package planes;
 
 import java.util.Objects;
 
@@ -31,6 +31,6 @@ public class PassengerPlane extends Plane{
 
     @Override
     public int hashCode() {
-        return super.hashCode()+Objects.hash( passengersCapacity);
+        return Objects.hash( super.hashCode(), passengersCapacity);
     }
 }
